@@ -44,7 +44,6 @@ const VideoWatch = () => {
   const darkMode = useSelector((state) => state.darkMode.isDarkMode);
   const dispatch = useDispatch();
   const getVideos = useSelector((state) => state.videoSaved.videoSaved);
-  const [openDialog, setOpenDialog] = useState(true);
 
   const handleSavedVideo = (video, channel) => {
     const newSavedVideo = {
@@ -120,7 +119,7 @@ const VideoWatch = () => {
                 width={"100%"}
                 height={"400px"}
                 controls={true}
-                // playing
+                playing
               />
             </CardMedia>
             <CardContent sx={{ padding: 0 }}>
