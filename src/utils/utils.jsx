@@ -23,6 +23,7 @@ export const handleFormatDate = (date) => {
       relativeTime: {
         past: "%s yang lalu",
         dd: "%d hari",
+        d: "%d hari",
         hh: "%d jam",
         w: "%d minggu",
         ww: "%d minggu",

@@ -29,6 +29,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { setDarkMode } from "../app/features/darkModeSlice";
+import Logo from "../assets/logo.png";
 
 const Header = () => {
   const darkMode = useSelector((state) => state.darkMode.isDarkMode);
@@ -104,7 +105,7 @@ const Header = () => {
                 alignItems: "center",
               }}
             >
-              <img src="../../public/logo.png" alt="" width={"38px"} />
+              <img src={Logo} alt="logo" width={"38px"} />
               <Typography
                 color={isDarkMode ? "white" : "black"}
                 variant="h6"
