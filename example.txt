@@ -1,0 +1,28 @@
+ // const [videos, setVideos] = useState();
+
+  // const getVideos = async () => {
+  //   try {
+  //     const response = await fetch(
+  //       `${apiVideo}?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=ID&videoDuration=long&videoCategoryId=${category}&key=${VITE_API_KEY_NEW}`
+  //     );
+  //     const data = await response.json();
+  //     data.items.forEach((item) => {
+  //       const duration = moment.duration(item.contentDetails.duration);
+  //       if (duration.hours() > 0) {
+  //         item.duration = moment
+  //           .utc(duration.asMilliseconds())
+  //           .format("hh:mm:ss");
+  //       } else {
+  //         item.duration = moment.utc(duration.asMilliseconds()).format("mm:ss");
+  //       }
+  //     });
+  //     const concatArr = data.items;
+  //     setVideos(concatArr);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   getVideos();
+  // }, [category]);
