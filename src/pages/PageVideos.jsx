@@ -1,7 +1,7 @@
-import { Box, Grid, Skeleton, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack } from "@mui/material";
 import CardVideo from "../components/CardVideo";
 import { useGetAllVideosQuery } from "../app/services/videosApi";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import SkeletonCard from "../components/SkeletonCard";
 
 const PageVideos = ({ category }) => {
