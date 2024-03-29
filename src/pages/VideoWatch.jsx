@@ -97,9 +97,9 @@ const VideoWatch = () => {
     setIsSaved(checkIdVideo);
   }, [id, dispatch]);
 
-  if (isSuccess) {
-    scrollToTop();
-  }
+  // if (isSuccess) {
+  //   scrollToTop();
+  // }
 
   return (
     <Container sx={{ marginTop: "80px" }}>
